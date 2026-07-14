@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header {
+    background-color: rgb(218, 166, 130);
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+
+}
+
+ol {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.logo-r {
+    color: #FD6E0A;
+}
+
+/* This is Primaruy Button */
+.primary-button {
+    color: white;
+    background-color: #FD6E0A;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.Secoundary-button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #FD6E0A;
+    background-color: white;
+    border: 1px solid #FD6E0A;
+    cursor: pointer;
+
+}
+
+/*  This is container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero-parent-root {
+    background-color: #FFF8F3;
+}
+
+.hero-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-parent h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hi {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-parent p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.about-container {
+    background-color: #FFF8F3;
+    margin: 90px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-container p {
+    margin: 10px 0;
+}
+
+.about-parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-parent .box {
+    background-color: #dfdad6;
+    padding: 0px 20px 10px;
+    border-radius: 5px;
+
+
+    /* what-i-do section */
+
+}
+
+.what-i-do {
+    text-align: center;
+    padding: 20px;
+}
+
+.what-i-do p {
+    margin-top: 20px;
+}
+
+.what-i-do-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    gap: 40px;
+}
+
+.what-i-do-cardone {
+    border: 1px solid #d1cbc6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.what-i-do-cardone p {
+    color: 757575;
+    font-size: 15px;
+}
+
+/* what-i-do section end */
+
+
+
+
+/* Resume section start */
+.resume-parent h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.resume-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+/* .resume-sub-titel{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 30px; */
+.resume-body-card h3 {
+    margin-bottom: 10px;
+}
+
+.resume-body-card h4 {
+    margin-bottom: 10px;
+}
+
+.resume-body-card p {
+    font-weight: 400px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.university {
+    font-weight: 600;
+}
+
+.button-link {
+    grid-column: span 2;
+    /* গ্রিডের ২ কলামের পুরো জায়গা একাই নিবে */
+    display: flex;
+    /* ফ্লেক্সবক্স অ্যাক্টিভ করা হলো */
+    justify-content: center;
+    /* এই ম্যাজিকটা ভেতরের বাটনকে টেনে একদম মাঝখানে আনবে */
+    text-decoration: none;
+    /* লিংকের নিচের দাগ দূর করবে */
+    width: 100%;
+    /* পুরো চওড়া বক্স নিশ্চিত করবে */
+    /* margin-top: 40px;         কার্ডগুলো থেকে নিচে সুন্দর একটা গ্যাপ তৈরি করবে */
+}
+
+
+
+/* resume section end */
+
+.Works-container {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+        "one two three"
+        "four two six"
+        " four five six"
+    ;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-1 {
+    grid-area: one;
+}
+
+.box-2 {
+    grid-area: two;
+}
+
+.box-3 {
+    grid-area: three;
+}
+
+.box-4 {
+    grid-area: four;
+}
+
+.box-5 {
+    grid-area: five;
+}
+
+.box-6 {
+    grid-area: six;
+}
+
+/* galery section done */
+/*Footer section start  */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    /* background-color: #dfdad6; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#color {
+    background-color: #FFF8F3;
+}
+.footer-left p{
+    margin: 10px 2px;
+}
+form input, form textarea{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+}
